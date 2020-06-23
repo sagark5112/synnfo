@@ -1,0 +1,73 @@
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: $font-family-merriweather;
+    margin: 0;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: $font-family-merriweather;
+    margin: 0;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: $font-family-merriweather;
+    margin: 0;
+}
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $font-family-merriweather;
+    margin: 0;
+}
+h5 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $font-family-merriweather;
+    margin: 0;
+}
+h6 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: $font-family-merriweather;
+    margin: 0;
+}
+.titillium__title--small {
+    text-transform: uppercase;
+    color: $primary;
+    font-family: $font-family-titillium;
+    font-size: 12px;
+    font-weight: 600;
+}
+.titillium__title--medium {
+    text-transform: uppercase;
+    color: $primary;
+    font-family: $font-family-titillium;
+    font-size: 18px;
+    font-weight: 600;
+}
+html {
+    font-size: 18px;
+}
+.block__header {
+    .block__title {
+        color: $primary;
+        font-size: 0.667rem;
+        letter-spacing: 1px;
+        font-family: $font-family-titillium;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: block;
+        margin-bottom: ($grid-gutter-width / 1.25);
+    }
+    .block__subtitle {
+        margin-bottom: ($grid-gutter-width / 3);
+    }
+    .block__desc {
+        font-size: 1rem;
+        font-family: $font-family-titillium;
+        line-height: normal;
+    }
+}

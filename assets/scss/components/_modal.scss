@@ -1,0 +1,83 @@
+.menu__modal {
+    padding: 0 !important;
+    .modal-dialog {
+        width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        margin: 0;
+        .modal-content {
+            height: 100%;
+            width: 100%;
+            border-radius: 0;
+            position: relative;
+            &:after {
+                // content: url('../images/cloud-primary.svg');
+                // position: absolute;
+                // bottom: -10px;
+            }
+            .modal__main {
+                .modal__block {
+                    margin-bottom: $grid-gutter-width;
+                    &__title {
+                        font-family: $font-family-titillium;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        color: $primary;
+                        font-size: 1rem;
+                        margin-bottom: ($grid-gutter-width / 2);
+                    }
+                    &__content {
+                        .modal__content__list {
+                            &__item {
+                                &__link {
+                                    font-family: $font-family-titillium;
+                                    font-size: 1rem;
+                                    color: $black;
+                                    transition: 0.25s all ease-in-out;
+                                    &:hover {
+                                        color: $primary;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                        .address__desc {
+                            color: rgba($color: $black, $alpha: 0.5);
+                            font-family: $font-family-titillium;
+                            font-size: 16px;
+                        }
+                        .address__title {
+                            font-family: $font-family-titillium;
+                            font-size: 1rem;
+                        }
+                        &.contact__block {
+                            .modal__content__list__item__link {
+                                color: $black;
+                                font-family: $font-family-titillium;
+                                transition: 0.25s all ease-in-out;
+                                &:hover {
+                                    color: $primary;
+                                }
+                            }
+                        }
+                        .modal__main__menu {
+                            &__item {
+                                &__link {
+                                    font-size: 60px;
+                                    color: $black;
+                                    font-family: $font-family-merriweather;
+                                    font-weight: 700;
+                                    transition: 0.25s all ease-in-out;
+                                    &:hover {
+                                        color: $primary;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.header__row {
+    &__inner {
+        .navbar {
+            &-nav {
+                .nav-item {
+                    margin-right: ($grid-gutter-width / 1.5);
+                    .nav-link {
+                        font-family: $font-family-titillium;
+                        color: $black;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

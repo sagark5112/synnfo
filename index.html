@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>synnfo</title>
+    <meta name="keywords" content="synnfo, cloud services, australia cloud services, cloud services in australia">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./dist/css/main.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+      <div class="container-fluid">
+        <div class="row header__row">
+            <div class="container">
+                <div class="row header__row__inner">
+                  <nav id="headerNavBar" class="navbar header-navbar navbar-expand-lg w-100">
+                      <div class="container-fluid">
+                        <a class="navbar-brand brand-logo" href="#">
+                          <figure class="m-0"><img width="150" src="./dist/images/logo.svg" /></figure>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                          data-target="#headerNav" aria-controls="headerNav" aria-expanded="false"
+                          aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Links -->
+                        <div class="collapse navbar-collapse" id="headerNav">
+                          <a href="index.html" class="brand-logo d-none">
+                            <figure><img src="./dist/images/logo.svg" /></figure>
+                          </a>
+                          <ul class="navbar-nav ml-md-auto justify-content-between">
+                            <li class="nav-item">
+                              <a class="nav-link text-uppercase" href="#package-composer">home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-uppercase" href="#method">about us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-uppercase" href="#about">services</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-uppercase" href="#diga-app">contact us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a data-toggle="modal" data-target="#menuModal" class="nav-link text-uppercase" href="#diga-app"><img src="./dist/images/hamburger.svg" alt=""></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                    <div class="modal fade menu__modal" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="container">
+                            <div class="row">
+                              <nav id="headerNavBar" class="navbar header-navbar navbar-expand-lg w-100">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand brand-logo" style="opacity: 0;" href="#">
+                                    <figure class="m-0"><img width="150" src="./dist/images/logo.svg" /></figure>
+                                  </a>
+                                  <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#headerNav" aria-controls="headerNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <!-- Links -->
+                                  <div class="collapse navbar-collapse" id="headerNav">
+                                    <a href="index.html" class="brand-logo d-none">
+                                      <figure><img src="./dist/images/logo.svg" /></figure>
+                                    </a>
+                                    <ul class="navbar-nav ml-md-auto justify-content-between">
+                                      <li class="nav-item">
+                                        <a data-toggle="modal" data-target="#menuModal" class="nav-link text-uppercase" href="#diga-app"><img src="./dist/images/hamburger-square.svg" width="60" alt=""></a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
+                              <div class="col-md-12 modal__main">
+                                <div class="row">
+                                  <div class="col-md-6 animate__animated animate__bounceInUp">
+                                    <div class="modal__block ">
+                                      <div class="modal__block__title">
+                                        services
+                                      </div>
+                                      <div class="modal__block__content">
+                                        <ul class="modal__content__list list-unstyled">
+                                          <li class="modal__content__list__item">
+                                            <a href="#" class="modal__content__list__item__link">
+                                              Cloud Services
+                                            </a>
+                                          </li>
+                                          <li class="modal__content__list__item">
+                                            <a href="#" class="modal__content__list__item__link">
+                                              Cyber Security
+                                            </a>
+                                          </li>
+                                          <li class="modal__content__list__item">
+                                            <a href="#" class="modal__content__list__item__link">
+                                              Software Testing
+                                            </a>
+                                          </li>
+                                          <li class="modal__content__list__item">
+                                            <a href="#" class="modal__content__list__item__link">
+                                              Digital Solutions
+                                            </a>
+                                          </li>
+                                          <li class="modal__content__list__item">
+                                            <a href="#" class="modal__content__list__item__link">
+                                              Analytics, Insights & Data
+                                            </a>
+                                          </li><li class="modal__content__list__item">
+                                            <a href="#" class="modal__content__list__item__link">
+                                              Managed IT Services
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="modal__block">
+                                      <div class="modal__block__title">
+                                        Location
+                                      </div>
+                                      <div class="row modal__block__content">
+                                        <div class="col-md-4">
+                                          <div class="address__desc">
+                                            Need the office Address here.
+                                          </div>
+                                          <div class="address__title">
+                                            Australia
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <div class="address__desc">
+                                            Need the office Address here.
+                                          </div>
+                                          <div class="address__title">
+                                            Australia
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal__block">
+                                      <div class="modal__block__title">
+                                        contact
+                                      </div>
+                                      <div class="modal__block__content contact__block">
+                                        <ul class="modal__content__list list-unstyled">
+                                          <li class="modal__content__list__item mb-2">
+                                            <img src="./dist/images/phone-grey.svg" class="mr-1" width="24" alt="">
+                                            <a class="modal__content__list__item__link" href="tel:9898989898">9898989898</a>
+                                          </li>
+                                          <li class="modal__content__list__item">
+                                            <img src="./dist/images/email-grey.svg" class="mr-1" width="24" alt="">
+                                            <a class="modal__content__list__item__link" href="mailto:email@synnfo.com">email@synnfo.com</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="modal__block">
+                                      <div class="modal__block__title">
+                                        Social Media
+                                      </div>
+                                      <div class="modal__block__content">
+                                        <ul class="modal__content__list list-unstyled">
+                                          <li class="modal__content__list__item">
+                                            <a class="footer__social__list__item__link" href="#"><img src="./dist/images/instagram.svg" width="32" alt=""></a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>  
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="modal__block animate__animated animate__bounceInDown">
+                                      <div class="modal__block__title">
+                                        menu
+                                      </div>
+                                      <div class="modal__block__content">
+                                        <ul class="modal__main__menu list-unstyled">
+                                          <li class="modal__main__menu__item">
+                                            <a href="#" class="modal__main__menu__item__link">Home</a>
+                                          </li>
+                                          <li class="modal__main__menu__item">
+                                            <a href="#" class="modal__main__menu__item__link">About Us</a>
+                                          </li>
+                                          <li class="modal__main__menu__item">
+                                            <a href="#" class="modal__main__menu__item__link">Services</a>
+                                          </li>
+                                          <li class="modal__main__menu__item">
+                                            <a href="#" class="modal__main__menu__item__link">Partners</a>
+                                          </li>
+                                          <li class="modal__main__menu__item">
+                                            <a href="#" class="modal__main__menu__item__link">Careers</a>
+                                          </li>
+                                          <li class="modal__main__menu__item">
+                                            <a href="#" class="modal__main__menu__item__link">Blogs</a>
+                                          </li>
+                                          <li class="modal__main__menu__item">
+                                            <a href="#" class="modal__main__menu__item__link">Contact Us</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row banner__row">
+          <div class="container">
+            <div class="row banner__row__inner">
+              <div class="col-md-6 banner_row__content">
+                <div class="banner__content">
+                  <h1 class="banner__content__title">
+                    We engineer brilliant solutions
+                  </h1>
+                  <button class="btn btn-primary has--chevron">
+                    Let's Collaborate
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6 banner_row__media">
+                <img src="dist/images/rocket-2.svg" class="animate__animated animate__bounceInUp">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row about__row">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 about__row__content block__header">
+                <span class="block__title">
+                  who are we
+                </span>
+                <h3 class="block__subtitle">
+                  We are Cloud Experts
+                </h3>
+                <p class="block__desc">
+                  A team of cloud experts committed to provide exceptional tech solutions to complex problems with our expertise and favourite technology, with pleasure!  
+                </p>
+                <button class="btn btn-primary has--chevron">
+                  Know Us
+                </button>
+              </div>
+              <div class="col-md-6 about__row__media">
+                <img src="./dist/images/about.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row services__row animate__animated animate__bounceInLeft">
+          <div class="container">
+            <div class="block__header">
+              <span class="block__title">
+                Our Services
+              </span>
+              <h3 class="block__subtitle">
+                What can we do for you
+              </h3>
+              <p class="block__desc">
+                We strive to bring the highest quality solutions with a fresh perspective focused on emerging technology  
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-md-4 service__block">
+                <div class="service__block__inner">
+                  <div class="service__block__media">
+                    <img src="./dist/images/services/services-cloud-services.svg" alt="">
+                  </div>
+                  <div class="service__block__content">
+                    <h6 class="service__block__title">
+                      Cloud Services
+                    </h6>
+                    <p class="service__block__desc">
+                      We solve complex problems with our favourite technology.  
+                    </p>
+                  </div>
+                  <div class="service__block__action">
+                    <button class="btn btn-link">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service__block">
+                <div class="service__block__inner">
+                  <div class="service__block__media">
+                    <img src="./dist/images/services/services-cyber-security.svg" alt="">
+                  </div>
+                  <div class="service__block__content">
+                    <h6 class="service__block__title">
+                      Cyber Security
+                    </h6>
+                    <p class="service__block__desc">
+                      We solve complex problems with our favourite technology.  
+                    </p>
+                  </div>
+                  <div class="service__block__action">
+                    <button class="btn btn-link">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service__block">
+                <div class="service__block__inner">
+                  <div class="service__block__media">
+                    <img src="./dist/images/services/services-software-testing.svg" alt="">
+                  </div>
+                  <div class="service__block__content">
+                    <h6 class="service__block__title">
+                      Software Testing
+                    </h6>
+                    <p class="service__block__desc">
+                      We solve complex problems with our favourite technology.  
+                    </p>
+                  </div>
+                  <div class="service__block__action">
+                    <button class="btn btn-link">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service__block">
+                <div class="service__block__inner">
+                  <div class="service__block__media">
+                    <img src="./dist/images/services/services-data-analytics.svg" alt="">
+                  </div>
+                  <div class="service__block__content">
+                    <h6 class="service__block__title">
+                      Data Analytics & Insights
+                    </h6>
+                    <p class="service__block__desc">
+                      We solve complex problems with our favourite technology.
+                    </p>
+                  </div>
+                  <div class="service__block__action">
+                    <button class="btn btn-link">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service__block">
+                <div class="service__block__inner">
+                  <div class="service__block__media">
+                    <img src="./dist/images/services/services-digital-solutions.svg" alt="">
+                  </div>
+                  <div class="service__block__content">
+                    <h6 class="service__block__title">
+                      Digital Solutions
+                    </h6>
+                    <p class="service__block__desc">
+                      We solve complex problems with our favourite technology.
+                    </p>
+                  </div>
+                  <div class="service__block__action">
+                    <button class="btn btn-link">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service__block">
+                <div class="service__block__inner">
+                  <div class="service__block__media">
+                    <img src="./dist/images/services/services-managed-it-solutions.svg" alt="">
+                  </div>
+                  <div class="service__block__content">
+                    <h6 class="service__block__title">
+                      Managed IT Solutions
+                    </h6>
+                    <p class="service__block__desc">
+                      We solve complex problems with our favourite technology.
+                    </p>
+                  </div>
+                  <div class="service__block__action">
+                    <button class="btn btn-link">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>                
+            </div>
+          </div>
+        </div>
+        <div class="row process__row">
+          <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1194" style="width: 100%" height="323" viewBox="0 0 1194 323">
+              <path class="process__path" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3" d="M1 5c539.08-3.708 883.402-3.301 1032.967 1.22C1258.317 13 1224.625 320 1053.561 319.5c-114.043-.333-464.389.073-1051.038 1.22"/>
+          </svg>
+          <div class="circle"></div>
+          </div>
+        </div>
+        <div class="row offers__row">
+          <div class="container">
+            <div class="block__header">
+              <span class="block__title">
+                engagement model
+              </span>
+              <h3 class="block__subtitle">
+                We offer the choice
+              </h3>
+              <p class="block__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-6 nav__links">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <div class="nav__link__block">
+                      <div class="step__block">
+                        1 of 3
+                      </div>
+                      <h4 class="title__block">
+                        Full Time Model
+                      </h4>
+                      <div class="desc__model">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+Lorem Ipsum is simply dummy text of.
+                      </div>
+                    </div>
+                  </a>
+                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <div class="nav__link__block">
+                      <div class="step__block">
+                        2 of 3
+                      </div>
+                      <h4 class="title__block">
+                        Part Time Model
+                      </h4>
+                      <div class="desc__model">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+Lorem Ipsum is simply dummy text of.
+                      </div>
+                    </div>
+                  </a>
+                  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                    <div class="nav__link__block">
+                      <div class="step__block">
+                        3 of 3
+                      </div>
+                      <h4 class="title__block">
+                        Hybrid Model
+                      </h4>
+                      <div class="desc__model">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+Lorem Ipsum is simply dummy text of.
+                      </div>
+                    </div>
+                  </a>
+                  
+                </div>
+              </div>
+              <div class="col-6 tab__content">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <img src="./dist/images/moon-1.svg" alt="">
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <img src="./dist/images/moon-2.svg" alt="">
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <img src="./dist/images/moon-1.svg" alt="">
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row connect__row bg-secondary">
+          <div class="container-fluid">
+            <div class="row connect--projects">
+              <div class="container">
+                <div class="row connect--projects__inner">
+                  <div class="col-6">
+                    <div class="block__header">
+                      <span class="block__title">
+                        Collaborate with us
+                      </span>
+                      <h3 class="block__subtitle">
+                        Have an idea? Hold that thought!
+    We will reach out to you
+                      </h3>
+                      <button class="btn btn__outline has--chevron">
+                        Drop your details here
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row connect--hiring">
+              <div class="container">
+                <div class="row connect--hiring__inner">
+                  <div class="col-7 connect--hiring__content">
+                    <div class="block__header">
+                      <span class="block__title">
+                        We are looking for talents
+                      </span>
+                      <h3 class="block__subtitle">
+                        Do you have the same passion and love for technology like we do?
+                      </h3>
+                      <button class="btn btn__outline has--chevron">
+                        Join Us
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-5 connect--hiring__image">
+                    <img src="./dist/images/connect-letters.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+        <footer class="row footer__row">
+          <div class="container">
+            <div class="row footer__row__inner">
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="mb-3">We engineer brilliant<br>solutions</h2>
+                    <button class="btn btn-primary has--chevron">Let's Collaborate</button>
+                  </div>
+                </div>
+                <div class="row mt-5 footer__section footer__address__section">
+                  <div class="titillium__title--medium footer__section__title col-12">
+                    Location
+                  </div>
+                  <div class="col-md-6 address__block">
+                    <div class="address__desc">
+                      Need the office Address here.
+                    </div>
+                    <div class="address__title">
+                      Australia
+                    </div>
+                  </div>
+                  <div class="col-md-6 address__block">
+                    <div class="address__desc">
+                      Need the office Address here.
+                    </div>
+                    <div class="address__title">
+                      Australia
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="footer__section">
+                      <div class="footer__section__title">
+                        <div class="titillium__title--medium">
+                          links
+                        </div>
+                      </div>
+                      <div class="footer__section__content">
+                        <ul class="footer__menu">
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Home</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">About Us</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Services</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Process</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Partners</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Career</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Blogs</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Contact Us</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="footer__section">
+                      <div class="footer__section__title">
+                        <div class="titillium__title--medium">
+                          services
+                        </div>
+                      </div>
+                      <div class="footer__section__content">
+                        <ul class="footer__menu">
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Cloud Services</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Cyber Security</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Software Testing</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Digital Solutions</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Analytics, Insights & Data</a>
+                          </li>
+                          <li class="footer__menu__item">
+                            <a class="footer__menu__item__link" href="#">Managed IT Services</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer__section mb-5">
+                  <div class="footer__section__title">
+                    <div class="titillium__title--medium">
+                      Social media
+                    </div>
+                  </div>
+                  <div class="footer__section__social">
+                    <ul class="footer__social__list list-unstyled">
+                      <li class="footer__social__list__item">
+                        <a class="footer__social__list__item__link" href="#"><img src="./dist/images/instagram.svg" width="32" alt=""></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__section mb-5">
+                  <div class="footer__section__title">
+                    <div class="titillium__title--medium">
+                      Contact
+                    </div>
+                  </div>
+                  <div class="footer__section__contact">
+                    <ul class="footer__contact__list list-unstyled">
+                      <li class="footer__contact__list__item mb-2">
+                        <img src="./dist/images/phone.svg" class="mr-1" width="24" alt="">
+                        <a class="footer__contact__list__item__link" href="tel:9898989898">9898989898</a>
+                      </li>
+                      <li class="footer__contact__list__item  mb-2">
+                        <img src="./dist/images/email.svg" class="mr-1" width="24" alt="">
+                        <a class="footer__contact__list__item__link" href="mailto:email@synnfo.com">email@synnfo.com</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+      </div>
+      <script>
+        $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').trigger('focus')
+        })
+      </script>
+      <script>
+        const path = document.querySelector('.process__path');
+        const circle = document.querySelector('.circle');
+        let pathPosition = path.getBoundingClientRect();
+        let documentPosition = document.body.getBoundingClientRect();
+        const pathTotalLength = path.getTotalLength();
+
+        let progressRow = document.getElementsByClassName('process__row');
+        console.log(progressRow);
+
+        function positionElements() {
+            // SVG passes center of screen
+
+            console.log(progressRow, 'progressRow');
+
+            const relativePageOffset = -pathPosition.top +
+                  (progressRow[0].offsetTop + progressRow[0].offsetHeight * .5);
+
+                  
+            console.log(relativePageOffset, 'relativePageOffset')
+            const pointPercentage = relativePageOffset / pathPosition.height;
+            const pointOnPath = pointPercentage * pathTotalLength;
+            const pathPoint = path.getPointAtLength(pointOnPath);
+
+            circle.style.transform = `translate(
+              ${ pathPosition.left + pathPoint.x }px,
+              ${ pathPosition.top + pathPoint.y }px
+            )`;
+        }
+        
+        progressRow[0].addEventListener('scroll', () => {
+          positionElements();
+        })
+
+        progressRow[0].addEventListener('resize', () => {
+          pathPosition = path.getBoundingClientRect();
+          documentPosition = document.body.getBoundingClientRect();
+          
+          positionElements();
+        });
+
+        positionElements();
+      </script>
+  </body>
+</html>

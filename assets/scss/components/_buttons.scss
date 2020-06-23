@@ -1,0 +1,37 @@
+.btn-primary {
+    @include button-variant($background: transparent, $border: $primary, $hover-background: transparent, $hover-border: darken($primary, 10%), $active-background: transparent, $active-border: darken($primary, 12.5%));
+    @include button-outline-variant($color: $primary, $color-hover: $primary, $active-background: transparent, $active-border: darken($primary, 12.5%));
+    @include button-size($padding-y: ($grid-gutter-width / 3), $padding-x: ($grid-gutter-width / 2), $font-size: 0.778rem, $line-height: 1, $border-radius: 0);
+    font-family: $font-family-merriweather;
+    border-width: 2px;
+    &.has--chevron {
+        padding-right: $grid-gutter-width * 1.5;
+        position: relative;
+        &:after {
+            content: url(../images/arrow-right.svg);
+            position: absolute;
+            top: calc(50% + 3px);
+            transform: translateY(-50%);
+            right: 10px;
+        }
+    }
+}
+.btn-link {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-family: $font-family-titillium;
+    font-size: 1rem;
+    transition: 0.25s all ease-in-out;
+    border: none;
+    outline: none;
+    &:hover {
+        color: darken($primary, 10%);
+        text-decoration: none;
+    }
+    &:active , &:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+}
