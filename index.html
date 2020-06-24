@@ -25,11 +25,7 @@
                         <a class="navbar-brand brand-logo" href="#">
                           <figure class="m-0"><img width="150" src="./dist/images/logo.svg" /></figure>
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                          data-target="#headerNav" aria-controls="headerNav" aria-expanded="false"
-                          aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <a data-toggle="modal" data-target="#menuModal" class="d-block d-md-none nav-link text-uppercase" href="#"><img src="./dist/images/hamburger.svg" alt=""></a>
                         <!-- Links -->
                         <div class="collapse navbar-collapse" id="headerNav">
                           <a href="index.html" class="brand-logo d-none">
@@ -37,19 +33,19 @@
                           </a>
                           <ul class="navbar-nav ml-md-auto justify-content-between">
                             <li class="nav-item">
-                              <a class="nav-link text-uppercase" href="#package-composer">home</a>
+                              <a class="nav-link text-uppercase" href="#">home</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-uppercase" href="#method">about us</a>
+                              <a class="nav-link text-uppercase" href="#">about us</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-uppercase" href="#about">services</a>
+                              <a class="nav-link text-uppercase" href="#">services</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-uppercase" href="#diga-app">contact us</a>
+                              <a class="nav-link text-uppercase" href="#p">contact us</a>
                             </li>
                             <li class="nav-item">
-                              <a data-toggle="modal" data-target="#menuModal" class="nav-link text-uppercase" href="#diga-app"><img src="./dist/images/hamburger.svg" alt=""></a>
+                              <a data-toggle="modal" data-target="#menuModal" class="nav-link text-uppercase" href="#"><img src="./dist/images/hamburger.svg" alt=""></a>
                             </li>
                           </ul>
                         </div>
@@ -65,11 +61,7 @@
                                   <a class="navbar-brand brand-logo" style="opacity: 0;" href="#">
                                     <figure class="m-0"><img width="150" src="./dist/images/logo.svg" /></figure>
                                   </a>
-                                  <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#headerNav" aria-controls="headerNav" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                  </button>
+                                  <a data-toggle="modal" data-target="#menuModal" class="d-block d-md-none nav-link text-uppercase" href="#"><img width="40" src="./dist/images/hamburger-square.svg" alt=""></a>
                                   <!-- Links -->
                                   <div class="collapse navbar-collapse" id="headerNav">
                                     <a href="index.html" class="brand-logo d-none">
@@ -77,7 +69,7 @@
                                     </a>
                                     <ul class="navbar-nav ml-md-auto justify-content-between">
                                       <li class="nav-item">
-                                        <a data-toggle="modal" data-target="#menuModal" class="nav-link text-uppercase" href="#diga-app"><img src="./dist/images/hamburger-square.svg" width="60" alt=""></a>
+                                        <a data-toggle="modal" data-target="#menuModal" class="nav-link text-uppercase" href="#"><img src="./dist/images/hamburger-square.svg" width="60" alt=""></a>
                                       </li>
                                     </ul>
                                   </div>
@@ -86,7 +78,7 @@
                               <div class="col-md-12 modal__main">
                                 <div class="row">
                                   <div class="col-md-6 animate__animated animate__bounceInUp">
-                                    <div class="modal__block ">
+                                    <div class="modal__block d-none d-md-block">
                                       <div class="modal__block__title">
                                         services
                                       </div>
@@ -124,7 +116,7 @@
                                         </ul>
                                       </div>
                                     </div>
-                                    <div class="modal__block">
+                                    <div class="modal__block d-none d-md-block">
                                       <div class="modal__block__title">
                                         Location
                                       </div>
@@ -147,7 +139,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="modal__block">
+                                    <div class="modal__block d-none d-md-block">
                                       <div class="modal__block__title">
                                         contact
                                       </div>
@@ -164,7 +156,7 @@
                                         </ul>
                                       </div>
                                     </div>
-                                    <div class="modal__block">
+                                    <div class="modal__block d-none d-md-block">
                                       <div class="modal__block__title">
                                         Social Media
                                       </div>
@@ -178,7 +170,7 @@
                                     </div>  
                                   </div>
                                   <div class="col-md-6">
-                                    <div class="modal__block animate__animated animate__bounceInDown">
+                                    <div class="modal__main__menu__block  modal__block animate__animated animate__bounceInDown">
                                       <div class="modal__block__title">
                                         menu
                                       </div>
@@ -274,7 +266,7 @@
                 We strive to bring the highest quality solutions with a fresh perspective focused on emerging technology  
               </p>
             </div>
-            <div class="row">
+            <div class="row services__slider">
               <div class="col-md-4 service__block">
                 <div class="service__block__inner">
                   <div class="service__block__media">
@@ -400,10 +392,91 @@
         </div>
         <div class="row process__row">
           <div class="container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1194" style="width: 100%" height="323" viewBox="0 0 1194 323">
-              <path class="process__path" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3" d="M1 5c539.08-3.708 883.402-3.301 1032.967 1.22C1258.317 13 1224.625 320 1053.561 319.5c-114.043-.333-464.389.073-1051.038 1.22"/>
-          </svg>
-          <div class="circle"></div>
+            <div class="block__header">
+              <span class="block__title">
+                Process
+              </span>
+              <h3 class="block__subtitle">
+                We mind the process!
+              </h3>
+              <p class="block__desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-md-12 process__path__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1194" style="width: 100%" height="323" viewBox="0 0 1194 323">
+                  <path class="process__path" fill="none" fill-rule="evenodd" stroke="#000" stroke-width="3" d="M1 5c539.08-3.708 883.402-3.301 1032.967 1.22C1258.317 13 1224.625 320 1053.561 319.5c-114.043-.333-464.389.073-1051.038 1.22"/>
+              </svg>
+              <div class="circle"></div>
+              </div>
+              <div class="col-md-4 process__block">
+                <div class="process__block__inner">
+                  <figure class="process__block__image">
+                    <img src="./dist/images/process/process-req-gathering.svg" alt="Requirement Gathering">
+                  </figure>
+                  <div class="process__block__content">
+                    <h5 class="process__block__title">Requirement Gathering</h5>
+                    <p class="process__block__desc">A growing part of our business is focused on emerging tech.</p>  
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 process__block">
+                <div class="process__block__inner">
+                  <figure class="process__block__image">
+                    <img src="./dist/images/process/process-resource-selection.svg" alt="Resource selection">
+                  </figure>     
+                  <div class="process__block__content">             
+                    <h5 class="process__block__title">Resource selection</h5>
+                    <p class="process__block__desc">A growing part of our business is focused on emerging tech.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 process__block">
+                <div class="process__block__inner">
+                  <figure class="process__block__image">
+                    <img src="./dist/images/process/process-proposal.svg" alt="Proposal">
+                  </figure>       
+                  <div class="process__block__content">
+                    <h5 class="process__block__title">Proposal</h5>
+                    <p class="process__block__desc">A growing part of our business is focused on emerging tech.</p>  
+                  </div>           
+                </div>
+              </div>
+              <div class="col-md-4 process__block">
+                <div class="process__block__inner">
+                  <figure class="process__block__image">
+                    <img src="./dist/images/process/process-execution.svg" alt="Execution">
+                  </figure>                  
+                  <div class="process__block__content">
+                    <h5 class="process__block__title">Execution</h5>
+                    <p class="process__block__desc">A growing part of our business is focused on emerging tech.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 process__block">
+                <div class="process__block__inner">
+                  <figure class="process__block__image">
+                    <img src="./dist/images/process/process-ci.svg" alt="Continous improvement">
+                  </figure>                 
+                  <div class="process__block__content">
+                    <h5 class="process__block__title">Continous improvement</h5>
+                    <p class="process__block__desc">A growing part of our business is focused on emerging tech.</p>
+                  </div>                 
+                </div>
+              </div>
+              <div class="col-md-4 process__block">
+                <div class="process__block__inner">
+                  <figure class="process__block__image">
+                    <img src="./dist/images/process/process-contract.svg" alt="Contract finalization">
+                  </figure>
+                  <div class="process__block__content">
+                    <h5 class="process__block__title">Contract finalization</h5>
+                    <p class="process__block__desc">A growing part of our business is focused on emerging tech.</p>
+                  </div>                  
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row offers__row">
@@ -420,54 +493,70 @@
               </p>
             </div>
             <div class="row">
-              <div class="col-6 nav__links">
+              <div class="col-md-6 nav__links">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <!-- <img src="./dist/images/moon-1.svg" class="d-block d-md-none w-100 mb-2" alt=""> -->
                     <div class="nav__link__block">
-                      <div class="step__block">
-                        1 of 3
+                      <div class="nav__link__image">
+                        <img src="./dist/images/moon-1.svg" class="d-block d-md-none w-100 mb-2" alt="">
                       </div>
-                      <h4 class="title__block">
-                        Full Time Model
-                      </h4>
-                      <div class="desc__model">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-Lorem Ipsum is simply dummy text of.
-                      </div>
+                      <div class="nav__link__content">
+                        <div class="step__block">
+                          1 of 3
+                        </div>
+                        <h4 class="title__block">
+                          Full Time Model
+                        </h4>
+                        <div class="desc__model">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+  Lorem Ipsum is simply dummy text of.
+                        </div>
+                      </div>                      
                     </div>
                   </a>
                   <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                     <div class="nav__link__block">
-                      <div class="step__block">
-                        2 of 3
+                      <div class="nav__link__image">
+                        <img src="./dist/images/moon-2.svg" class="d-block d-md-none w-100 mb-2" alt="">
                       </div>
-                      <h4 class="title__block">
-                        Part Time Model
-                      </h4>
-                      <div class="desc__model">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-Lorem Ipsum is simply dummy text of.
-                      </div>
+                      <div class="nav__link__content">
+                        <div class="step__block ">
+                          2 of 3
+                        </div>
+                        <h4 class="title__block">
+                          Part Time Model
+                        </h4>
+                        <div class="desc__model">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+  Lorem Ipsum is simply dummy text of.
+                        </div>
+                      </div>                      
                     </div>
                   </a>
                   <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                     <div class="nav__link__block">
-                      <div class="step__block">
-                        3 of 3
+                      <div class="nav__link__image">
+                        <img src="./dist/images/moon-1.svg" class="d-block d-md-none w-100 mb-2" alt="">
                       </div>
-                      <h4 class="title__block">
-                        Hybrid Model
-                      </h4>
-                      <div class="desc__model">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-Lorem Ipsum is simply dummy text of.
-                      </div>
+                      <div class="nav__link__content">
+                        <div class="step__block">
+                          3 of 3
+                        </div>
+                        <h4 class="title__block">
+                          Hybrid Model
+                        </h4>
+                        <div class="desc__model">
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+  Lorem Ipsum is simply dummy text of.
+                        </div>
+                      </div>                      
                     </div>
                   </a>
                   
                 </div>
               </div>
-              <div class="col-6 tab__content">
+              <div class="col-md-6 tab__content  d-md-block d-none">
                 <div class="tab-content" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     <img src="./dist/images/moon-1.svg" alt="">
@@ -490,7 +579,7 @@ Lorem Ipsum is simply dummy text of.
             <div class="row connect--projects">
               <div class="container">
                 <div class="row connect--projects__inner">
-                  <div class="col-6">
+                  <div class="col-md-6">
                     <div class="block__header">
                       <span class="block__title">
                         Collaborate with us
@@ -504,7 +593,7 @@ Lorem Ipsum is simply dummy text of.
                       </button>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-md-6">
     
                   </div>
                 </div>
@@ -535,7 +624,7 @@ Lorem Ipsum is simply dummy text of.
           </div>
         </div>  
 
-        <footer class="row footer__row">
+        <footer class="row footer__row d-md-block d-none">
           <div class="container">
             <div class="row footer__row__inner">
               <div class="col-md-4">
@@ -678,6 +767,126 @@ Lorem Ipsum is simply dummy text of.
             </div>
           </div>
         </footer>
+        <footer class="row footer__mobile__row d-block d-md-none">
+          <div class="container">
+            <div class="row footer__mobile__row__inner">
+            <div class="col-6">
+              <div class="footer__mobile__block">
+                <div class="footer__mobile__block__title">
+                  Links
+                </div>
+                <div class="footer__mobile__block__content">
+                  <ul class="footer__mobile__list list-unstyled">
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Home</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">About Us</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Services</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Process</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Partners</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Career</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Blogs</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__mobile__block">
+                <div class="footer__mobile__block__title">
+                  Social Media
+                </div>
+                <div class="footer__mobile__block__content">
+                  <ul class="footer__social__list list-unstyled">
+                    <li class="footer__social__list__item">
+                      <a class="footer__social__list__item__link" href="#"><img src="./dist/images/instagram.svg" width="24" alt=""></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="footer__mobile__block">
+                <div class="footer__mobile__block__title">
+                  Location
+                </div>
+                <div class="footer__mobile__block__content">
+                  <ul class="footer__location__list list-unstyled">
+                    <li class="footer__location__list__item">
+                      <p class="footer__location__list__item__desc">
+                        Need the office Address
+                      </p>
+                      <p class="footer__location__list__item__title">
+                        Australia
+                      </p>
+                    </li>
+                    <li class="footer__location__list__item">
+                      <p class="footer__location__list__item__desc">
+                        Need the office Address
+                      </p>
+                      <p class="footer__location__list__item__title">
+                        Australia
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__mobile__block">
+                <div class="footer__mobile__block__title">
+                  Links
+                </div>
+                <div class="footer__mobile__block__content">
+                  <ul class="footer__mobile__list list-unstyled">
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Cloud Services</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Cyber Security</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Software Testing</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Digital Solutions</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Analytics, Insights & Data</a>
+                    </li>
+                    <li class="footer__menu__item">
+                      <a class="footer__menu__item__link" href="#">Managed IT Solutions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <div class="footer__mobile__block text-center">
+                <div class="footer__mobile__block__heading mb-3">
+                  <h6>We engineer<br>
+                    brilliant applications</h6>
+                </div>  
+                <div class="footer__mobile__block__action">
+                  <button class="btn btn-primary has--chevron">
+                    Let's Collaborate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </footer>
         
       </div>
       <script>
@@ -727,6 +936,30 @@ Lorem Ipsum is simply dummy text of.
         });
 
         positionElements();
+      </script>
+      <script
+        src="./node_modules/slick-carousel/slick/slick.js"
+        type="text/javascript"
+      ></script>
+      <script>
+        if (window.matchMedia("(max-width: 768px)").matches) {
+          $('.services__slider').slick({
+          
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1,
+                dots: true
+              }
+            },
+          ]
+        });
+        }
+        
       </script>
   </body>
 </html>

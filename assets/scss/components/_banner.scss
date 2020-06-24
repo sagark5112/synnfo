@@ -24,6 +24,10 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
+        @include media-breakpoint-down(md) {
+            left: 0;
+            bottom: 5px;
+        }
     }
     &:after {
         // content: url('../images/cloud-secondary-2.svg');
@@ -49,9 +53,19 @@
         .banner_row__content {
             display: flex;
             align-items: flex-start;
-            margin-top: 120px;
+            margin-top: ($grid-gutter-width * 2.5);
             animation: bounceInDown;
-        animation-duration: 4s;
+            animation-duration: 4s;
+            @include media-breakpoint-down(md) {
+                margin-top: ($grid-gutter-width);
+                text-align: center;
+                margin-bottom: ($grid-gutter-width);
+                justify-content: center;
+                .banner__content__title {
+                    font-size: 1.33rem;
+                    margin-bottom: ($grid-gutter-width / 2);
+                }
+            }
         }
         .banner_row__media {
             text-align: center;
@@ -59,6 +73,9 @@
                 width: 90%;
                 margin-bottom: 150px;
                 animation-duration: 4s;
+                @include media-breakpoint-down(md) {
+                    margin-bottom: -30px;
+                }
             }
         }
     }

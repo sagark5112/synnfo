@@ -1,21 +1,34 @@
 .btn-primary {
-    @include button-variant($background: transparent, $border: $primary, $hover-background: transparent, $hover-border: darken($primary, 10%), $active-background: transparent, $active-border: darken($primary, 12.5%));
-    @include button-outline-variant($color: $primary, $color-hover: $primary, $active-background: transparent, $active-border: darken($primary, 12.5%));
-    @include button-size($padding-y: ($grid-gutter-width / 3), $padding-x: ($grid-gutter-width / 2), $font-size: 0.778rem, $line-height: 1, $border-radius: 0);
+    background: transparent;
+    padding: ($grid-gutter-width / 3) ($grid-gutter-width / 2);
+    margin: 0;
     font-family: $font-family-merriweather;
-    border-width: 2px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.25s all ease-in-out;
+    border: 2px solid $primary;
+    color: $primary;
+    border-radius: 0;
+    &:hover {
+        text-decoration: none;
+    }
+    &:active , &:focus {
+        outline: none;
+        box-shadow: none;
+    }
     &.has--chevron {
         padding-right: $grid-gutter-width * 1.5;
         position: relative;
         &:after {
             content: url(../images/arrow-right.svg);
             position: absolute;
-            top: calc(50% + 3px);
+            top: calc(50% + 5px);
             transform: translateY(-50%);
             right: 10px;
         }
     }
 }
+
 .btn-link {
     background: transparent;
     padding: 0;
@@ -33,5 +46,34 @@
         border: none;
         outline: none;
         box-shadow: none;
+    }
+}
+.btn__outline {
+    background: transparent;
+    padding: ($grid-gutter-width / 3) ($grid-gutter-width / 2);
+    margin: 0;
+    font-family: $font-family-merriweather;
+    font-size: 1rem;
+    transition: 0.25s all ease-in-out;
+    border: 2px solid $black;
+    color: $black;
+    border-radius: 0;
+    &:hover {
+        text-decoration: none;
+    }
+    &:active , &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    &.has--chevron {
+        padding-right: $grid-gutter-width * 1.5;
+        position: relative;
+        &:after {
+            content: url(../images/arrow-right-black.svg);
+            position: absolute;
+            top: calc(50% + 5px);
+            transform: translateY(-50%);
+            right: 10px;
+        }
     }
 }

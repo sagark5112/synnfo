@@ -59,3 +59,70 @@
         }
     }
 }
+
+.footer__mobile__row {
+    background-image: url(../images/rectangle-black.svg);
+    background-size: cover;
+    padding-top: ($grid-gutter-width * 1.5);
+    padding-bottom: ($grid-gutter-width * 1.5);
+    &__inner {
+        width: 90%;
+        margin: auto;
+    }
+    .footer__mobile__block {
+        margin-bottom: ($grid-gutter-width / 1.5);
+        .footer__mobile__block__title {
+            text-transform: uppercase;
+            color: $primary;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 0.667rem;
+            font-weight: 600;
+            margin-bottom: ($grid-gutter-width / 2);
+        }
+        .footer__mobile__block__content {
+            .footer__mobile__list {
+                .footer__menu__item {
+                    margin-bottom: ($grid-gutter-width / 3);
+                    line-height: 1;
+                    &__link {
+                        color: $white;
+                        font-size: 1rem;
+                        font-family: $font-family-titillium;
+                        transition: 0.25s all ease-in-out;
+                        font-size: 0.667rem;
+                        &:hover {
+                            color: $primary;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .footer__social__list {
+
+            }
+            .footer__location__list {
+                &__item {
+                    margin-bottom: ($grid-gutter-width / 2);
+                    &__desc {
+                        margin: 0;
+                        font-size: 0.667rem;
+                        color: rgba($color: $white, $alpha: 0.5);
+                        font-family: $font-family-titillium;
+                    }
+                    &__title {
+                        margin: 0;
+                        font-size: 0.667rem;
+                        color: $white;
+                        font-family: $font-family-titillium;
+                    }
+                }
+            }
+        }
+        &__heading {
+            color: $white;
+            h6 {
+                line-height: normal;
+            }
+        }
+    }
+}
